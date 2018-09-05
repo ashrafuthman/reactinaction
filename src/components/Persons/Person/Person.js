@@ -16,9 +16,23 @@ class Person extends Component {
     console.log('[Person.js] Inside componentDidMount');
   }
 
-  render() {
+  componentWillReceiveProps ( nextProps ) {
+  	console.log('[UPDATE Person.js] Inside componentWillRecieveProps', nextProps );
+  }
+  
+  shouldComponentUpdate ( nextProps, nextState ) {
+    console.log('[UPDATE Person.js] Inside shouldComponentUpdate', nextProps, nextState);
+    return false;
+  }
 
+  // DidComponentUpdate(nextProps, nextState) {
+  //  console.log('[UPDATE Person.js] Inside DidComponentUpdate', nextProps, nextState);
+  // }
+   
+  render() {
+  	
   	console.log('[Person.js] Inside render');
+
     return (
         <div className={classes.Person}>
             <p onClick={this.props.click}>I'm {this.props.name} and I am {this.props.age} years old!</p>
