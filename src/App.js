@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Cockpit from './Cockpit/Cockpit';
 import classes from './App.css';
-import Person from '../components/Persons/Persons;
+import Person from '../components/Persons/Persons';
 
 class App extends Component {
   state = {
