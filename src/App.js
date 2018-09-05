@@ -4,6 +4,10 @@ import classes from './App.css';
 import Person from '../components/Persons/Persons';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    console.log('')
+  }
   state = {
     persons: [
       { id: 'asfa1', name: 'Max', age: 28 },
