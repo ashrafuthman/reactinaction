@@ -92,6 +92,7 @@ class App extends PureComponent {
 
     return (
         <div className={classes.App}>
+        <button onClick={()=>{this.setState({showPersons: true})}}>Show persons</button>
         <Cockpit
         appTitle={this.props.appTitle}
          showPersons={this.state.showPersons}

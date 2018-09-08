@@ -4,6 +4,7 @@ import Person from './Person/Person'
 class Persons extends PureComponent {
   constructor (props) {
     super(props)
+    console.log("Hello from Persons.js");
     console.log('[Persons.js] Inside constructor');
   }
 
